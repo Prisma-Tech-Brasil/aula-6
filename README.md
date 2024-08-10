@@ -1,34 +1,6 @@
-# Guia Rápido sobre Tipos em JavaScript
+# Guia Rápido sobre Variáveis e Tipos em JavaScript
 
-Este documento fornece uma visão geral dos tipos `boolean`, `undefined`, `null` e `NaN` em JavaScript, incluindo exemplos básicos e suas diferenças.
-
-## 1. Tipos Booleanos
-
-O tipo booleano em JavaScript representa um valor que pode ser `true` (verdadeiro) ou `false` (falso).
-
-### Exemplo de Uso
-
-```javascript
-// Tipos Booleanos em JavaScript
-
-const verdadeiro = true;
-const falso = false;
-
-// Comparações que retornam booleanos
-const a = 5;
-const b = 10;
-
-console.log(a > b);  // false
-console.log(a < b);  // true
-
-// Operadores lógicos
-const x = true;
-const y = false;
-
-console.log(x && y); // false
-console.log(x || y); // true
-console.log(!x); // false
-```
+Este documento fornece uma visão geral de variáveis e dos tipos `boolean`, `undefined`, `null` e `NaN` em JavaScript, incluindo exemplos básicos e suas diferenças.
 
 # Exercícios
 
