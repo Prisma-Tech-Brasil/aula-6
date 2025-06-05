@@ -1,17 +1,87 @@
-# Guia Rápido sobre Variáveis e Tipos em JavaScript
+# 🧠 Variáveis e Dados Primitivos em JavaScript
 
-Este documento fornece uma visão geral de variáveis e dos tipos `boolean`, `undefined`, `null` e `NaN` em JavaScript, incluindo exemplos básicos e suas diferenças.
+## 📌 O que são variáveis?
 
-# Exercícios
+Variáveis são **espaços na memória** onde podemos **guardar informações** para usá-las depois. Em JavaScript, usamos `let`, `const` ou `var` para declarar variáveis (recomendamos usar `let` e `const`).
 
-## 1. Declare três variáveis diferentes (uma para cada tipo: string, número e booleano) e atribua valores a elas. Em seguida, exiba o tipo de cada variável no console.
+### Exemplos:
 
-## 2. Crie duas variáveis, uma contendo seu primeiro nome e outra contendo seu último nome. Em seguida, combine-as em uma terceira variável usando o operador + e em uma quarta variável usando template strings. Por fim, imprima os resultados obtidos no console.
+```javascript
+let nome = "Ana";
+const idade = 25;
+```
 
-## 3. Declare duas variáveis, uma contendo um número e outra contendo uma string. Em seguida, combine-as em uma terceira variável usando template strings para montar uma frase e exiba o resultado no console.
+- `let` permite que o valor seja **alterado** depois.
+- `const` cria uma variável **constante** (o valor não pode mudar).
 
-## 4. Crie uma variável inicializada com um valor de qualquer tipo e, em seguida, reatribua um novo valor a essa variável. Imprima ambos os valores no console após atribuí-los.
+---
 
-## 5. Declare uma variável usando var fora de um bloco de código (por exemplo, if) e outra dentro desse bloco. Tente acessar essas variáveis dentro do bloc e fora dele utilizando console.log e analise os resultados. Faça o mesmo processo utilizando let e compare com os resultados anteriores.
+## 📦 Tipos de Dados Primitivos
 
-## 6. Declare uma variável booleana que informa se está chovendo e utilize-a em uma estrutura condicional (if) para exibir uma mensagem informando se é preciso levar um guarda-chuva ou não dependendo do valor da variável.
+JavaScript possui alguns tipos de dados chamados **primitivos**. Eles são os tipos mais básicos que representam valores simples:
+
+### 1. **String** → Texto
+
+Usado para representar textos. Sempre entre aspas.
+
+```javascript
+let cidade = "Vitória";
+```
+
+### 2. **Number** → Número
+
+Pode ser inteiro ou com casas decimais.
+
+```javascript
+let idade = 30;
+let preco = 49.99;
+```
+
+### 3. **Boolean** → Verdadeiro ou Falso
+
+Usado para lógica.
+
+```javascript
+let estaLogado = true;
+let temConta = false;
+```
+
+### 4. **Undefined** → Não definido
+
+É o valor de uma variável que **ainda não recebeu um valor**.
+
+```javascript
+let valor;
+console.log(valor); // undefined
+```
+
+### 5. **Null** → Nulo (sem valor)
+
+Usado para dizer que uma variável está **vazia de propósito**.
+
+```javascript
+let resposta = null;
+```
+
+### 6. **BigInt** → Números muito grandes (raro no dia a dia)
+
+```javascript
+const numeroGrande = 1234567890123456789012345678901234567890n;
+```
+
+### 7. **Symbol** → Identificadores únicos (avançado)
+
+---
+
+## 🛠️ Boas práticas
+
+- Use `let` quando o valor for mudar.
+- Use `const` quando o valor não deve mudar.
+- Dê nomes claros e sem espaços para as variáveis.
+- JavaScript é **case sensitive**: `idade` é diferente de `Idade`.
+
+---
+
+## 🚀 Conclusão
+
+Saber declarar variáveis e entender os tipos primitivos é o **primeiro passo** para programar em JavaScript. Essas ferramentas básicas são usadas em praticamente **todo código que você vai escrever**.
